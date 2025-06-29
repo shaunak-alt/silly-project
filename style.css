@@ -1,0 +1,111 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: radial-gradient(circle at top, #ffe6f0, #ffccff);
+  text-align: center;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  background: #ffffffdd;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 0 25px #ffb6c1;
+}
+
+input {
+  padding: 15px;
+  font-size: 22px;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid #ff69b4;
+  outline: none;
+  margin: 5px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  margin-left: 10px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff1493;
+}
+
+.loading {
+  margin-top: 40px;
+}
+
+.bar-bg {
+  width: 90%;
+  height: 35px;
+  background-color: #ffd6e8;
+  margin: 25px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  width: 0%;
+  height: 100%;
+  background-color: #ff69b4;
+  transition: width 0.4s;
+}
+
+#loadingText, #heightText {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 25px;
+  color: #d63384;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.final-result {
+  font-size: 36px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #e84393;
+}
+
+.explosion {
+  margin-top: 30px;
+  height: 280px;
+}
+
+#explosionGIF, #catGIF {
+  width: auto;
+  max-height: 260px;
+}
+
+.tab-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tab-buttons button {
+  padding: 10px 25px;
+  font-size: 18px;
+  margin: 0 10px;
+  border: none;
+  background-color: #ffb6c1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tab-buttons button:hover {
+  background-color: #ff69b4;
+}

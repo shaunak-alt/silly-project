@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mind Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tab-buttons">
+    <button onclick="showTab('number')">Guess Number</button>
+    <button onclick="showTab('height')">Height Guesser</button>
+  </div>
+
+  <div class="container" id="numberTab">
+    <h2>Pick any number you want, I will read your mind</h2>
+    <div class="input-area">
+      <input type="number" id="userNumber" placeholder="Enter your number">
+      <button onclick="startReadingNumber()">Read my Mind</button>
+    </div>
+    <div class="loading hidden" id="numberLoading">
+      <div class="bar-bg"><div class="bar-fill" id="numberBar"></div></div>
+      <p id="numberText">Reading your mind...</p>
+    </div>
+    <div class="explosion"><img src="explosion.gif" id="explosionGIF" class="hidden"></div>
+    <div class="final-result hidden" id="numberResult"></div>
+  </div>
+
+  <div class="container hidden" id="heightTab">
+    <h2>Type your height, I’ll analyze it scientifically</h2>
+    <div class="input-area">
+        <input type="number" id="feet" placeholder="Feet">
+        <input type="number" id="inches" placeholder="Inches">
+        <button onclick="startReadingHeight()">Analyze Height</button>
+    </div>
+    <div class="loading hidden" id="heightLoading">
+        <div class="bar-bg"><div class="bar-fill" id="heightBar"></div></div>
+        <p id="heightText">Analyzing...</p>
+    </div>
+    <div class="explosion"><img src="cat-laugh.gif" id="catGIF" class="hidden"></div>
+    <div class="final-result hidden" id="heightResult"></div>
+    </div>
+
+
+
+  <audio id="boomSound" src="boom.mp3" preload="auto"></audio>
+  <audio id="ambientSound" src="brainwave.mp3" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
