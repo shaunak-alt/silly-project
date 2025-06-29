@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mind Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Pick any number you want, I will read your mind</h2>
+
+    <div class="input-area" id="inputArea">
+      <input type="number" id="userNumber" placeholder="Enter your number">
+      <button onclick="startReading()">Read my Mind</button>
+    </div>
+
+    <div class="loading hidden" id="loadingSection">
+      <div class="bar-bg">
+        <div class="bar-fill" id="loadingBar"></div>
+      </div>
+      <p id="loadingText">Reading your mind...</p>
+    </div>
+
+    <div class="explosion" id="explosionContainer">
+        <img src="explosion.gif" alt="Explosion animation" id="explosionGIF" class="hidden">
+    </div>
+
+
+    <div class="final-result hidden" id="result"></div>
+  </div>
+
+  <audio id="boomSound" src="boom.mp3" preload="auto"></audio>
+  <audio id="ambientSound" src="brainwave.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
